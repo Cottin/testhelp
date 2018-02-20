@@ -1,0 +1,29 @@
+{
+  "name": "testhelp",
+  "version": "0.1.0",
+  "description": "Some few functions I use in unit testing",
+  "main": "lib/testhelp.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "coffee -o lib/ -c src/",
+    "dist": "npm run clean && npm run build",
+    "test": "mocha 'src/**/test*.coffee' --watch --compilers coffee:coffee-script/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cottin/testhelp.git"
+  },
+  "keywords": [
+    "testhelp",
+    "test"
+    "unit testing"
+  ],
+  "author": "Victor Cottin <victor@wecodebetter..se> (http://www.wecodebetter.se/)",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "rimraf": "^2.4.3"
+  },
+  "dependencies": {
+  }
+}
