@@ -36,8 +36,12 @@ fit = (spec, o) ->
 	paths = changedPaths spec
 	subO = pickRec paths, o
 	deepEq spec, subO
+fit_ = (spec, o) ->
+	console.log o
+	fit spec, o
 ffit = flip fit
+ffit_ = flip fit_
 
 
 #auto_export:none_
-module.exports = {eq, eq_, feq, feq_, deepEq, deepEq_, fdeepEq, fdeepEq_, throws, fthrows, fit, ffit}
+module.exports = {eq, eq_, feq, feq_, deepEq, deepEq_, fdeepEq, fdeepEq_, throws, fthrows, fit, fit_, ffit, ffit_}

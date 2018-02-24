@@ -1,6 +1,6 @@
 {
   "name": "testhelp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Some few functions I use in unit testing",
   "main": "lib/testhelp.js",
   "scripts": {
