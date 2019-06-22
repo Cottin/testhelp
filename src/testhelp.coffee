@@ -60,5 +60,5 @@ ffit = flip fit
 ffit_ = flip fit_
 
 
-#auto_export:none_
-module.exports = {eq, eq_, feq, feq_, deepEq, deepEq_, fdeepEq, fdeepEq_, throws, throws_, fthrows, fit, fit_, ffit, ffit_}
+#auto_export: none_
+module.exports = {eq, eq_, feq, feq_, deepEq, deepEq_, fdeepEq, fdeepEq_, throws, throws_, fthrows, fthrows_, throwsP, throwsP_, fthrowsP, fthrowsP_, fit, fit_, ffit, ffit_}
