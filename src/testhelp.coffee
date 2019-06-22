@@ -30,7 +30,24 @@ fdeepEq_ = (a, b) ->
 	assert.deepStrictEqual(a, b)
 
 throws = (re, f) -> assert.throws f, re
-fthrows = (f, re) -> assert.throws f, re
+throws_ = (re, f) ->
+	console.log f()
+	assert.throws f, re
+fthrows = (f, re) ->
+	assert.throws f, re
+fthrows_ = (f, re) ->
+	console.log f()
+	assert.throws f, re
+
+throwsP = (re, f) -> assert.rejects f, re
+throwsP_ = (re, f) ->
+	console.log f()
+	assert.rejects f, re
+fthrowsP = (f, re) ->
+	assert.rejects f, re
+fthrowsP_ = (f, re) ->
+	console.log f()
+	assert.rejects f, re
 
 fit = (spec, o) ->
 	paths = changedPaths spec
@@ -44,4 +61,4 @@ ffit_ = flip fit_
 
 
 #auto_export:none_
-module.exports = {eq, eq_, feq, feq_, deepEq, deepEq_, fdeepEq, fdeepEq_, throws, fthrows, fit, fit_, ffit, ffit_}
+module.exports = {eq, eq_, feq, feq_, deepEq, deepEq_, fdeepEq, fdeepEq_, throws, throws_, fthrows, fit, fit_, ffit, ffit_}
